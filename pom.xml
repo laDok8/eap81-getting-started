@@ -27,7 +27,7 @@
     </parent>
 
     <groupId>org.jboss.eap.openshift.quickstarts</groupId>
-    <artifactId>eap8-openshift-quickstart-helloworld</artifactId>
+    <artifactId>eap81-openshift-quickstart-helloworld</artifactId>
     <version>1.0.0.Final-SNAPSHOT</version>
     <packaging>war</packaging>
     <name>Quickstart: helloworld</name>
