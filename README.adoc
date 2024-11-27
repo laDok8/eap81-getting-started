@@ -1,4 +1,4 @@
-= Getting Started with JBoss EAP 8 on OpenShift
+= Getting Started with JBoss EAP 8.1 on OpenShift
 
 
 == The Application
@@ -7,10 +7,10 @@ The `src/main` folder contains a simple 'Hello world' style Jakarta EE applicati
 == Deploying the Quickstart
 Make sure you have done all the https://github.com/jboss-eap-up-and-running/docs/blob/main/RUNNING_ON_OPENSHIFT.adoc#prerequisites[prerequisites] and https://github.com/jboss-eap-up-and-running/docs/blob/main/RUNNING_ON_OPENSHIFT.adoc#selecting_creating_a_project[selected/created a project].
 
-Then install the Helm chart for EAP 8 to install the application into OpenShift.
+Then install the Helm chart for EAP 8.1 to install the application into OpenShift.
 [source,shell]
 ----
-helm install eap8  --repo https://jbossas.github.io/eap-charts/ eap8
+helm install eap81  --repo https://jbossas.github.io/eap-charts/ eap81
 ----
 See the https://github.com/jboss-eap-up-and-running/docs/blob/main/RUNNING_ON_OPENSHIFT.adoc#deploying_with_helm[Deploying with Helm] section for information about when the application will be ready.
 
@@ -20,7 +20,7 @@ To run the application, you can access it through its OpenShift route:
 
 [source,shell]
 ----
-echo https://$(oc get route eap8 --template='{{ .spec.host }}')
+echo https://$(oc get route eap81 --template='{{ .spec.host }}')
 ----
 
 If you use this URL, you will see the welcome page of the application.
